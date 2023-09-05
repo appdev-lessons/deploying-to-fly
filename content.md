@@ -5,7 +5,7 @@
 
 Any time you want to deploy a static website, we recommend using our [HTML template](https://learn.firstdraft.com/lessons/60#html-template), and [GitHub Pages](https://learn.firstdraft.com/lessons/55). 
 
-But there's another option that will also work, and work for dynamic database-backed CRUD apps: [Fly.io](https://fly.io). 
+But there's another option that will also work, and for dynamic database-backed CRUD apps as well: [Fly.io](https://fly.io). 
 
 Use your GitHub account [to sign-up](https://fly.io/app/sign-up), and let's see how we can serve a variety of apps so that anyone with a URL can visit your projects.
 

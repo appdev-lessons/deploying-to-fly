@@ -96,7 +96,7 @@ When you finish, you will see `Your Ruby app is prepared for deployment`, and yo
 
 The `fly launch` command created some new files in your repository: `.dockerignore` (only if a `.gitignore` was already present), `Dockerfile`, and `fly.toml`. These files are the instructions that Fly will follow to create and serve your app on your virtual machines hosted by Fly.io.
 
-This is a great time to make a [git commit with the message "fly launch success"](https://learn.firstdraft.com/lessons/50#committing-changes). By committing (and eventually pushing with the "Sync" button), you will publish the Fly recipe in the repo on GitHub, so that you can make changes to it later if needed.
+This is a great time to make a [git commit with the message "fly launch success"](https://learn.firstdraft.com/lessons/50-git-commit-and-push#committing-changes). By committing (and eventually pushing with the "Sync" button), you will publish the Fly recipe in the repo on GitHub, so that you can make changes to it later if needed.
 
 There is just one more command to run at the bash prompt to deploy the app:
 

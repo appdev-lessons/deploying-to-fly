@@ -314,6 +314,8 @@ Now, every time you push changes to the `main` branch, a GitHub Action will be r
 
 ### Scheduled Jobs
 
+**TODO: Look into this as an alternative: https://github.com/sidekiq-cron/sidekiq-cron**
+
 If you have a `sample_data` task (or some other `rake` task) that you want to periodically run on your deployed app, then you will need to setup a `cron` job to do so using [supercronic](https://github.com/aptible/supercronic), which runs well in containers on Fly.
 
 The below steps are somewhat specific to Rails, but you can view [this commit for setting it up in a Sinatra app deployed on Fly](https://github.com/bpurinton/sinatra-omnicalc/commit/abb180e1ec8bcb7a852670ffe1e425ea112c6eb2)

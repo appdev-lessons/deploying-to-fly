@@ -6,8 +6,6 @@ To do so, we will use [Fly.io](https://fly.io). Fly is great, because we can use
 
 Use your GitHub account [to sign-up](https://fly.io/app/sign-up), and let's see how we can serve our app.
 
-If you would like a video demonstration of the process, [then have a look at this recording](https://share.descript.com/view/o4P2RSZ9SXE). But you should rely on the text here as your how-to guide anytime you want to deploy a non-database backed web site (another guide will cover the case where you have a database).
-
 ## Fly Offering and Payment
 
 Fly's free usage tier (their ["Hobby Plan"](https://fly.io/docs/about/pricing/)), provides three 256MB RAM Virtual Machines, and 3GB of volume storage, which is enough to host your side projects. 

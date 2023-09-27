@@ -12,7 +12,7 @@ Fly's free usage tier (their ["Hobby Plan"](https://fly.io/docs/about/pricing/))
 
 <div class="bg-blue-100 py-1 px-5" markdown="1">
 
-After you sign-up, you will need to **enter credit card information [in the billing section](https://fly.io/dashboard/personal/billing)** of your dashboard (navigate to `fly.io/dashboard` and see the "Billing" tab). You **will not be charged** for making small side projects, but the credit card must be on file.
+After you sign-up, you will need to **enter credit card information [in the billing section](https://fly.io/dashboard/personal/billing)** of your dashboard (navigate to `fly.io/dashboard` and see the "Billing" tab). You may see a small (less than $1) initial charge on your card, but that is just for verification and will be cancelled soon. You **will not be charged** for making small side projects, but the credit card must be on file.
 </div>
 
 If you decide to host larger apps, and want something more powerful to serve real customers, then you can easily scale Fly up by increasing the CPUs and RAM available and pay as you go in CPU usage hours. Alternatively, you may end up going with a service like [Heroku](https://www.heroku.com/) or [hatchbox.io](https://hatchbox.io/). But, the Fly.io hobby plan should be sufficient (and free!) for now.

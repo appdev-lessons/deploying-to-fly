@@ -185,6 +185,12 @@ At any time you can visit your app at [fly.io/dashboard](https://fly.io/dashboar
 
 And that's it! Your web site is live and you can share that link with anyone.
 
+<div class="bg-blue-100 py-1 px-5" markdown="1">
+
+As before, just re-run the `fly deploy` command to migrate any changes you make to your app to the live deployment.
+</div>
+
+
 If you want a custom domain name for your app, you will need to follow some additional steps. The basic process is [outlined in this manual from Fly](https://fly.io/docs/app-guides/custom-domains-with-fly/), and a "speed run" is shown [in this blog post](https://fly.io/blog/how-to-custom-domains-with-fly/).
 
 ---

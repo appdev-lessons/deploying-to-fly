@@ -47,7 +47,7 @@ On the next screen, give the organization a name. I will call it "hello-world". 
 
 ![](/assets/fly-create-org-2.png)
 
-<div class="bg-blue-100 py-1 px-5" markdown="1">
+<div class="bg-red-100 py-1 px-5" markdown="1">
 
 When you go to click "Continue", you will see that you are being charged on a $5 per month "Hobby Plan". **Don't panic, you will not actually be charged anything**. You may need to enter credit card information again on the next screen. Fly will not collect any money from your credit card if you do not exceed $5 per month in usage. Think of this as a "free $5 limit". If your app grows, then you may exceed this, in which case Fly will collect a bill; and they want your credit card on file in case this occurs. For small side projects in this class and for your portfolio, **you will not end up exceeding this limit and incurring a charge**.
 

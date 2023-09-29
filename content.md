@@ -54,9 +54,9 @@ When you go to click "Continue", you will see that you are being charged on a $5
 Here's a note from their customer service:
 
 > ...additional orgs are billed at the $5 paid Hobby plan rate. However, we waive charges for any orgs that have invoices < $5, so small deployments on additional orgs are effectively free... We're not trying to make money from it, it's just a way to limit abuse on the platform.
-</div>
 
 You will need to enter this credit card information for every new organization (i.e. every new app) you create.
+</div>
 
 ### Deploy!
 

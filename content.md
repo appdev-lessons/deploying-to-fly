@@ -135,7 +135,7 @@ And that's it! Your web site is live and you can share that link with anyone.
 
 <div class="bg-blue-100 py-1 px-5" markdown="1">
 
-Have you made changes to your app in the codespace that you would like to re-deploy? It's as easy as re-running the `fly deploy` command once form your codespace after you make the changes. Because the "recipe" is saved in your `fly.toml` and `Dockerfile`, Fly will handle everything and the changes you made to your app will show up when you re-run this command. Just be sure that you commit and push your changes to GitHub for safekeeping and ability to go back in time to previous versions of your app.
+Have you made changes to your app in the codespace that you would like to re-deploy? It's as easy as re-running the `fly deploy` command once form your codespace after you make the changes. Because the "recipe" is saved in your `fly.toml` and `Dockerfile`, Fly will handle everything and the changes you made to your app will show up when you re-run this command. Just be sure that you commit and push your changes to GitHub for safekeeping and the ability to go back in time to previous versions of your app.
 </div>
 
 If you want a custom domain name for your app, you will need to follow some additional steps. The basic process is [outlined in this manual from Fly](https://fly.io/docs/app-guides/custom-domains-with-fly/), and a "speed run" is shown [in this blog post](https://fly.io/blog/how-to-custom-domains-with-fly/).

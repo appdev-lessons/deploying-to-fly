@@ -64,7 +64,13 @@ When you are done creating a Fly organization and you've entered billing informa
 
 Navigate to [the list of all of your codespaces at github.com/codespaces](https://github.com/codespaces) to reopen it if you have since closed it. If you cannot find the codespace, simply visit the repo page (e.g. `github.com/<your-username>/hello-world`) and create a new codespace.
 
-Once you are in the codespace, login to Fly by typing this at a bash prompt in the terminal tab, and clicking "Open" when prompted in the pop-up message:
+Once you are in the codespace, make sure your Fly version is up-to-date by running this at the bash prompt in the terminal tab:
+
+```
+fly version upgrade
+```
+
+Once you've updated, login to Fly by typing this at a bash prompt, and clicking "Open" when prompted in the pop-up message:
 
 ```
 fly auth login
@@ -134,3 +140,46 @@ If you want a custom domain name for your app, you will need to follow some addi
 Are you seeking to deploy an app that has a database? Read the next section for the additional steps to take there!
 
 ## Deploying a database-backed Rails app
+
+Proceed as in the previous steps by creating a new organization for your app, launching the codespace, updating the fly version and running the `fly launch` command.
+
+The difference to the previous step comes when selecting a `Postgres`. This time you will say `Y` for "yes". Then, be sure to select the `Development` configuration:
+
+![](/assets/select-development-db.png)
+
+And `y` for "yes" to spin down the database after an hour of inactivity:
+
+![](/assets/zero-after-one-hour.png)
+
+This step will take a moment while the database is created. When it is done, you can proceed as in the previous steps by saying:
+
+- `N` for "no" to a `Redis database`
+- `Y` for "yes" to a `.dockerignore` file
+
+When you finish, you will see `Your Ruby app is prepared for deployment`, and you will be returned to the bash prompt.
+
+The `fly launch` command created some new files in your repository: `.dockerignore` (only if a `.gitignore` was already present), `Dockerfile`, and `fly.toml`. These files are the instructions that Fly will follow to create and serve your app on your virtual machines hosted by Fly.io.
+
+This is a great time to make a [git commit with the message "fly launch success"](https://learn.firstdraft.com/lessons/50-git-commit-and-push#committing-changes). By committing (and eventually pushing with the "Sync" button), you will publish the Fly recipe in the repo on GitHub, so that you can make changes to it later if needed.
+
+There is just one more command to run at the bash prompt to deploy the app:
+
+```
+fly deploy
+```
+
+That command will take a minute or two and there will be a lot of output at your terminal. Fly is building a docker image and pushing it to the server, and then the server is launching. Wait patiently until you are returned to your empty bash prompt.
+
+When it is done, you can launch into the deployed app by visiting the URL `https://<your-app-name>.fly.dev`, or by simply entering at the bash prompt:
+
+```
+fly open
+```
+
+At any time you can visit your app at [fly.io/dashboard](https://fly.io/dashboard) by navigating to the organization associated with the app. There you will find tabs to monitor the server logs and more.
+
+And that's it! Your web site is live and you can share that link with anyone.
+
+If you want a custom domain name for your app, you will need to follow some additional steps. The basic process is [outlined in this manual from Fly](https://fly.io/docs/app-guides/custom-domains-with-fly/), and a "speed run" is shown [in this blog post](https://fly.io/blog/how-to-custom-domains-with-fly/).
+
+---

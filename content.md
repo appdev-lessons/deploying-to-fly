@@ -6,6 +6,11 @@ To do so, we will use [Fly.io](https://fly.io). Fly is great, because we can use
 
 Use your GitHub account [to sign-up](https://fly.io/app/sign-up), and let's see how we can serve our app.
 
+<div class="bg-blue-100 py-1 px-5" markdown="1">
+
+A small section at the end of this document includes the steps to deploy a database-backed Rails app. You don't need to read that section until we get to Ruby on Rails and databases. The deployment steps are almost identical, with just one difference!
+</div>
+
 ## Fly Offering and Payment
 
 Fly's free usage tier (their ["Hobby Plan"](https://fly.io/docs/about/pricing/)), provides three 256MB RAM Virtual Machines, and 3GB of volume storage, which is enough to host your side projects. 
@@ -125,3 +130,7 @@ And that's it! Your web site is live and you can share that link with anyone.
 If you want a custom domain name for your app, you will need to follow some additional steps. The basic process is [outlined in this manual from Fly](https://fly.io/docs/app-guides/custom-domains-with-fly/), and a "speed run" is shown [in this blog post](https://fly.io/blog/how-to-custom-domains-with-fly/).
 
 ---
+
+Are you seeking to deploy an app that has a database? Read the next section for the additional steps to take there!
+
+## Deploying a database-backed Rails app

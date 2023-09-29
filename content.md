@@ -45,12 +45,7 @@ Navigate to your [Fly dashboard at fly.io/dashboard](https://fly.io/dashboard), 
 
 On the next screen, give the organization a name. I will call it "hello-world". You can choose any name you like, but I suggest to name the organization after the app associated with it:
 
-(Note: The guide is written for the "Hello, World" web site, but can be generalized to _any_ non-database backed web site; static HTML, or dynamic using Ruby on the backend. Just exchange "Hello, World" and "hello-world" for whatever app you are trying to deploy!)
-
----
-
 ![](/assets/fly-create-org-2.png)
-
 
 <div class="bg-blue-100 py-1 px-5" markdown="1">
 

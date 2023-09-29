@@ -29,7 +29,38 @@ We have pre-installed Fly in both the Codespaces and Gitpod environment, but you
 
 ## Deploying your app
 
-When you are done creating a Fly account and you've entered billing information, open the GitHub codespace for your project (e.g. `<your-username>/hello-world`, or whichever repo you are trying to deploy).
+### Create a new organization
+
+For every app that you deploy on Fly, we recommend creating a new "organization". This will allow you to have separate virtual machines for each app.
+
+Navigate to your [Fly dashboard at fly.io/dashboard](https://fly.io/dashboard), and click on "Create Organization":
+
+![](/assets/fly-create-org-1.png)
+{: .bleed-full }
+
+On the next screen, give the organization a name. I will call it "hello-world". You can choose any name you like, but I suggest to name the organization after the app associated with it:
+
+(Note: The guide is written for the "Hello, World" web site, but can be generalized to _any_ non-database backed web site; static HTML, or dynamic using Ruby on the backend. Just exchange "Hello, World" and "hello-world" for whatever app you are trying to deploy!)
+
+---
+
+![](/assets/fly-create-org-2.png)
+
+
+<div class="bg-blue-100 py-1 px-5" markdown="1">
+
+When you go to click "Continue", you will see that you are being charged on a $5 per month "Hobby Plan". **Don't panic, you will not actually be charged anything**. You may need to enter credit card information again on the next screen. Fly will not collect any money from your credit card if you do not exceed $5 per month in usage. Think of this as a "free $5 limit". If your app grows, then you may exceed this, in which case Fly will collect a bill; and they want your credit card on file in case this occurs. For small side projects in this class and for your portfolio, **you will not end up exceeding this limit and incurring a charge**.
+
+Here's a note from their customer service:
+
+> ...additional orgs are billed at the $5 paid Hobby plan rate. However, we waive charges for any orgs that have invoices < $5, so small deployments on additional orgs are effectively free... We're not trying to make money from it, it's just a way to limit abuse on the platform.
+</div>
+
+You will need to enter this credit card information for every new organization (i.e. every new app) you create.
+
+### Deploy!
+
+When you are done creating a Fly organization and you've entered billing information, open the GitHub Codespace for your project (e.g. `<your-username>/hello-world`, or whichever repo you are trying to deploy).
 
 Navigate to [the list of all of your codespaces at github.com/codespaces](https://github.com/codespaces) to reopen it if you have since closed it. If you cannot find the codespace, simply visit the repo page (e.g. `github.com/<your-username>/hello-world`) and create a new codespace.
 

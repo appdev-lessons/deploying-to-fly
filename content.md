@@ -143,7 +143,7 @@ Are you seeking to deploy an app that has a database? Read the next section for 
 
 Proceed as in the previous steps by creating a new organization for your app, launching the codespace, updating the fly version and running the `fly launch` command.
 
-The difference to the previous step comes when selecting a `Postgres`. This time you will say `Y` for "yes". Then, be sure to select the `Development` configuration:
+The difference to the previous step comes when selecting a `Postgresql database`. This time you will say `Y` for "yes". Then, be sure to select the `Development` configuration:
 
 ![](/assets/select-development-db.png)
 

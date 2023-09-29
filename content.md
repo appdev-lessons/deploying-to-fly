@@ -82,6 +82,11 @@ You will be taken through a series of steps to setup the app.
 
 First, you will be asked to choose an app name. Leave it blank to generate a random name by pressing <kbd>return</kbd>.
 
+Next, use the arrow keys to select the name of the organization that you just created for the app, and press <kbd>return</kbd> when you have it highlighted:
+
+<!-- ![](/assets/fly-launch-select-org.png) -->
+![](https://res.cloudinary.com/dmxgp9oq2/image/upload/v1689108559/fly-launch-select-org_dljzj1.png)
+
 Next, use the arrow keys to select the appropriate timezone (you can also begin typing a city/state/country name and it will filter the list) and press <kbd>return</kbd> to select it:
 
 <!-- ![](/assets/fly-3-timezone.png) -->

@@ -6,9 +6,9 @@ To do so, we will use [Fly.io](https://fly.io). Fly is great, because we can use
 
 Use your GitHub account [to sign-up](https://fly.io/app/sign-up), and let's see how we can serve our app.
 
-<div class="bg-blue-100 py-1 px-5" markdown="1">
+<div class="bg-red-100 py-1 px-5" markdown="1">
 
-A small section at the end of this document includes the steps to deploy a database-backed Rails app. You don't need to read that section until we get to Ruby on Rails and databases. The deployment steps are almost identical, with just one difference!
+At the moment Fly is charging credit cards for the creation of additional organizations, which we recommend doing in this lesson. We are working with their customer service to try and sort this issue out. For now, to avoid credit card charges, we recommend using Render to deploy, as that is free and does not require a credit card to sign up. [See our guide on Render for those steps](https://learn.firstdraft.com/lessons/114-deploying-to-render).
 </div>
 
 ## Fly Offering and Payment
@@ -49,13 +49,9 @@ On the next screen, give the organization a name. I will call it "hello-world". 
 
 <div class="bg-red-100 py-1 px-5" markdown="1">
 
-When you go to click "Continue", you will see that you are being charged on a $5 per month "Hobby Plan". **Don't panic, you will not actually be charged anything**. You may need to enter credit card information again on the next screen. Fly will not collect any money from your credit card if you do not exceed $5 per month in usage. Think of this as a "free $5 limit". If your app grows, then you may exceed this, in which case Fly will collect a bill; and they want your credit card on file in case this occurs. For small side projects in this class and for your portfolio, **you will not end up exceeding this limit and incurring a charge**.
+**We are currently experiencing difficulties with some students being charged for organization creation. We are working with Fly customer service to resolve these issues. Apologies for the inconvenience.**
 
-Here's a note from their customer service:
-
-> ...additional orgs are billed at the $5 paid Hobby plan rate. However, we waive charges for any orgs that have invoices < $5, so small deployments on additional orgs are effectively free... We're not trying to make money from it, it's just a way to limit abuse on the platform.
-
-You will need to enter this credit card information for every new organization (i.e. every new app) you create.
+When you go to click "Continue", you will see that you are being charged on a $5 per month "Hobby Plan". You may need to enter credit card information again on the next screen. Fly will not collect any money from your credit card if you do not exceed $5 per month in usage. Think of this as a "free $5 limit". If your app grows, then you may exceed this, in which case Fly will collect a bill; and they want your credit card on file in case this occurs. For small side projects in this class and for your portfolio, you will not end up exceeding this limit and incurring a charge.
 </div>
 
 ### Deploy!
@@ -142,7 +138,12 @@ If you want a custom domain name for your app, you will need to follow some addi
 
 ---
 
-Are you seeking to deploy an app that has a database? Read the next section for the additional steps to take there!
+<div class="bg-blue-100 py-1 px-5" markdown="1">
+
+Are you seeking to deploy an app that has a database? Read the next section for the additional steps to take there.
+
+You don't need to read that section until we get to Ruby on Rails and databases. The deployment steps are almost identical, with just one difference!
+</div>
 
 ## Deploying a database-backed Rails app
 

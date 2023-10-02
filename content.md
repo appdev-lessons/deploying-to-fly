@@ -8,7 +8,7 @@ Use your GitHub account [to sign-up](https://fly.io/app/sign-up), and let's see 
 
 <div class="bg-red-100 py-1 px-5" markdown="1">
 
-At the moment Fly is charging credit cards for the creation of additional organizations, which we recommend doing in this lesson. We are working with their customer service to try and sort this issue out. For now, to avoid credit card charges, we recommend using Render to deploy, as that is free and does not require a credit card to sign up. [See our guide on Render for those steps](https://learn.firstdraft.com/lessons/114-deploying-to-render).
+You are welcome to try out Fly, which has a very easy deployment process. However, some students have reported charges for deploying small apps. To avoid potential credit card charges, we recommend using Render to deploy, as that does not require a credit card to sign up. [See our guide on Render for those steps](https://learn.firstdraft.com/lessons/114-deploying-to-render).
 </div>
 
 ## Fly Offering and Payment
@@ -17,7 +17,7 @@ Fly's free usage tier (their ["Hobby Plan"](https://fly.io/docs/about/pricing/))
 
 <div class="bg-blue-100 py-1 px-5" markdown="1">
 
-After you sign-up, you will need to **enter credit card information [in the billing section](https://fly.io/dashboard/personal/billing)** of your dashboard (navigate to `fly.io/dashboard` and see the "Billing" tab). You may see a small (less than $1) initial charge on your card, but that is just for verification and will be cancelled soon. You **will not be charged** for making small side projects, but the credit card must be on file.
+After you sign-up, you will need to **enter credit card information [in the billing section](https://fly.io/dashboard/personal/billing)** of your dashboard (navigate to `fly.io/dashboard` and see the "Billing" tab). You may see a small (less than $1) initial charge on your card, but that is just for verification and will be cancelled soon. Fly waives bill collection for monthly account usage below $5.
 </div>
 
 If you decide to host larger apps, and want something more powerful to serve real customers, then you can easily scale Fly up by increasing the CPUs and RAM available and pay as you go in CPU usage hours. Alternatively, you may end up going with a service like [Heroku](https://www.heroku.com/) or [hatchbox.io](https://hatchbox.io/). But, the Fly.io hobby plan should be sufficient (and free!) for now.
@@ -34,29 +34,7 @@ We have pre-installed Fly in both the Codespaces and Gitpod environment, but you
 
 ## Deploying your app
 
-### Create a new organization
-
-For every app that you deploy on Fly, we recommend creating a new "organization". This will allow you to have separate virtual machines for each app.
-
-Navigate to your [Fly dashboard at fly.io/dashboard](https://fly.io/dashboard), and click on "Create Organization":
-
-![](/assets/fly-create-org-1.png)
-{: .bleed-full }
-
-On the next screen, give the organization a name. I will call it "hello-world". You can choose any name you like, but I suggest to name the organization after the app associated with it:
-
-![](/assets/fly-create-org-2.png)
-
-<div class="bg-red-100 py-1 px-5" markdown="1">
-
-**We are currently experiencing difficulties with some students being charged for organization creation. We are working with Fly customer service to resolve these issues. Apologies for the inconvenience.**
-
-When you go to click "Continue", you will see that you are being charged on a $5 per month "Hobby Plan". You may need to enter credit card information again on the next screen. Fly will not collect any money from your credit card if you do not exceed $5 per month in usage. Think of this as a "free $5 limit". If your app grows, then you may exceed this, in which case Fly will collect a bill; and they want your credit card on file in case this occurs. For small side projects in this class and for your portfolio, you will not end up exceeding this limit and incurring a charge.
-</div>
-
-### Deploy!
-
-When you are done creating a Fly organization and you've entered billing information, open the GitHub Codespace for your project (e.g. `<your-username>/hello-world`, or whichever repo you are trying to deploy).
+When you are done creating a Fly account and you've entered billing information, open the GitHub Codespace for your project (e.g. `<your-username>/hello-world`, or whichever repo you are trying to deploy).
 
 Navigate to [the list of all of your codespaces at github.com/codespaces](https://github.com/codespaces) to reopen it if you have since closed it. If you cannot find the codespace, simply visit the repo page (e.g. `github.com/<your-username>/hello-world`) and create a new codespace.
 
@@ -83,11 +61,6 @@ fly launch
 You will be taken through a series of steps to setup the app. 
 
 First, you will be asked to choose an app name. Leave it blank to generate a random name by pressing <kbd>return</kbd>.
-
-Next, use the arrow keys to select the name of the organization that you just created for the app, and press <kbd>return</kbd> when you have it highlighted:
-
-<!-- ![](/assets/fly-launch-select-org.png) -->
-![](https://res.cloudinary.com/dmxgp9oq2/image/upload/v1689108559/fly-launch-select-org_dljzj1.png)
 
 Next, use the arrow keys to select the appropriate timezone (you can also begin typing a city/state/country name and it will filter the list) and press <kbd>return</kbd> to select it:
 
@@ -125,7 +98,7 @@ fly open
 
 The app will have a randomly generated name, if you left the name blank in the first `fly launch` step. In my case, it happens to be `https://crimson-voice-4018.fly.dev`.
 
-At any time you can visit your app at [fly.io/dashboard](https://fly.io/dashboard) by navigating to the organization associated with the app ("hello-world-app" in this case). There you will find tabs to monitor the server logs (just like what you saw in the terminal when you ran `rackup`!) and more.
+At any time you can visit your app at [fly.io/dashboard](https://fly.io/dashboard). There you will find tabs to monitor the server logs (just like what you saw in the terminal when you ran `rackup`!) and more.
 
 And that's it! Your web site is live and you can share that link with anyone.
 
@@ -147,7 +120,7 @@ You don't need to read that section until we get to Ruby on Rails and databases.
 
 ## Deploying a database-backed Rails app
 
-Proceed as in the previous steps by creating a new organization for your app, launching the codespace, updating the fly version and running the `fly launch` command.
+Proceed as in the previous steps by launching the codespace, updating the fly version and running the `fly launch` command.
 
 The difference to the previous step comes when selecting a `Postgresql database`. This time you will say `Y` for "yes". Then, be sure to select the `Development` configuration:
 
@@ -182,7 +155,7 @@ When it is done, you can launch into the deployed app by visiting the URL `https
 fly open
 ```
 
-At any time you can visit your app at [fly.io/dashboard](https://fly.io/dashboard) by navigating to the organization associated with the app. There you will find tabs to monitor the server logs and more.
+At any time you can visit your app at [fly.io/dashboard](https://fly.io/dashboard). There you will find tabs to monitor the server logs and more.
 
 And that's it! Your web site is live and you can share that link with anyone.
 

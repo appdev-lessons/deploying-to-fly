@@ -84,6 +84,12 @@ The `fly launch` command created some new files in your repository: `.dockerigno
 
 This is a great time to make a [git commit with the message "fly launch success"](https://learn.firstdraft.com/lessons/50#committing-changes).
 
+Because we only want our production gems and configuration loaded, we also need to set the environment:
+
+```
+fly secrets set RACK_ENV=production
+```
+
 There is just one more command to run to deploy the app:
 
 ```
@@ -164,6 +170,12 @@ Now open the `fly.toml` file generated during the `fly launch` command and add t
 ```
 
 The first `[mounts]` section tells Fly to create a new persistent storage volume called `production_db` in the `db/` folder. The second `[env]` section tells Fly to set a new `ENV` variable, which will be passed to the app when it is time to setup a database connection in the `config/environment.rb` file. Note that we put this new database inside the persistent storage volume `db/production_db/`, and we named it `production.sqlite3`. That differentiates it from our `development` database.
+
+Because we only want our production gems and configuration loaded, we also need to set the environment:
+
+```
+fly secrets set RACK_ENV=production
+```
 
 Now:
 
